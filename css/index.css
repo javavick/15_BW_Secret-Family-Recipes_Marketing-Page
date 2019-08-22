@@ -126,8 +126,42 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  color: #4a4a4a;
+}
+body {
+  width: 93%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.2rem;
+}
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+header nav a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+header nav .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+header nav .log-in {
+  font-size: 1.4rem;
 }
