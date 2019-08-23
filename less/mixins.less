@@ -1,0 +1,23 @@
+.buttonStyles(@bg, @color, @hover-bg) {
+  border: none;
+  border-radius: 5px;
+  background-color: @bg;
+  color: @color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @hover-bg;
+  }
+}
+
+.blockStyles(@bg, @color) {
+  background-color: @bg;
+  color: @color;
+  text-align: center;
+  margin: 35px 35px 0 35px;
+  font-family: "Nunito", sans-serif;
+
+  &:first-child {
+    margin-top: 65px;
+  }
+}
