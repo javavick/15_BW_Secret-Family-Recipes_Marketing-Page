@@ -152,7 +152,7 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 18px;
 }
 header nav a {
   text-decoration: none;
@@ -170,15 +170,15 @@ header nav .log-in {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 30px;
+  margin: 32px 30px;
 }
 #landing-header h1 {
   font-weight: bold;
   text-align: center;
 }
 #landing-header button {
-  margin: 30px auto;
-  padding: 1px 25px;
+  margin: 33px auto 23px auto;
+  padding: 1px 27px;
   border: none;
   border-radius: 5px;
   background-color: #4a4a4a;
@@ -187,4 +187,29 @@ header nav .log-in {
 }
 #landing-header button:hover {
   background-color: #6b6b6b;
+}
+/*========== TOP CONTENT ==========*/
+#top-content p {
+  margin-top: 15px;
+  margin-right: 20px;
+  line-height: 1.2;
+}
+#top-content h2 {
+  margin-top: 42px;
+}
+/*========== TESTIMONIALS ==========*/
+.testimonial-block {
+  background-color: #4a4a4a;
+  color: #fafaff;
+  text-align: center;
+  margin: 65px 30px 15px 30px;
+  padding: 15px 40px 25px 40px;
+  font-family: "Nunito", sans-serif;
+}
+.testimonial-block h2 {
+  margin-top: 15px;
+}
+.testimonial-block p {
+  margin-top: 10px;
+  line-height: 1.3;
 }
