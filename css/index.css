@@ -186,15 +186,38 @@ header nav .about {
 #landing-header {
   margin: 32px 30px;
 }
+@media (min-width: 1000px) {
+  #landing-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 3% 7%;
+  }
+}
 #landing-header #sign-up {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1000px) {
+  #landing-header #sign-up {
+    padding-bottom: 20%;
+  }
+}
 #landing-header h1 {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
+}
+@media (min-width: 1000px) {
+  #landing-header h1 {
+    font-size: 3.2rem;
+    padding-bottom: 3%;
+    width: 100%;
+    text-align: left;
+  }
 }
 #landing-header button {
   border: none;
@@ -209,12 +232,20 @@ header nav .about {
 #landing-header button:hover {
   background-color: #6b6b6b;
 }
+@media (min-width: 1000px) {
+  #landing-header button {
+    margin-left: 60%;
+  }
+}
 #landing-header p {
   display: none;
 }
 @media (min-width: 1000px) {
   #landing-header p {
     display: block;
+    text-align: center;
+    font-size: 2rem;
+    text-align: left;
   }
 }
 #landing-header img {

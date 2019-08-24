@@ -2,17 +2,34 @@
 
 #landing-header {
   margin: 32px 30px;
+  @media @desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 3% 7%;
+  }
 
   #sign-up {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media @desktop{
+      padding-bottom: 20%;
+    }
   }
 
   h1 {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
+    @media @desktop{
+      font-size: 3.2rem;
+      padding-bottom: 3%;
+      width: 100%;
+      text-align: left;
+    }
   }
 
   button {
@@ -21,12 +38,18 @@
     margin: 33px auto 23px auto;
     padding: 2px 30px;
     font-size: 1.8rem;
+    @media @desktop{
+      margin-left: 60%;
+    }
   }
 
   p{
     display: none;
     @media @desktop{
       display: block;
+      text-align: center;
+      font-size: 2rem;
+      text-align: left;
     }
   }
 
