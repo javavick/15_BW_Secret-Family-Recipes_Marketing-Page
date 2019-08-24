@@ -10,14 +10,10 @@
   }
 }
 
-.blockStyles(@bg, @color) {
+.blockStyles(@bg, @color, @font) {
   background-color: @bg;
   color: @color;
   text-align: center;
   margin: 35px 35px 0 35px;
-  font-family: "Nunito", sans-serif;
-
-  &:first-child {
-    margin-top: 65px;
-  }
+  font-family: @font, sans-serif;
 }

@@ -1,5 +1,6 @@
 /*===== COLOR ASSIGNMENTS =====*/
 /*===== COLORS =====*/
+/*===== OTHER =====*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -171,22 +172,23 @@ header nav a {
   text-decoration: none;
   color: #4a4a4a;
 }
-header nav .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+header nav img {
+  width: 50px;
 }
 header nav .pages {
   font-size: 1.4rem;
 }
 header nav .about {
-  margin-right: 10px;
+  margin-right: 40px;
 }
 /*========== HEADER ==========*/
 #landing-header {
+  margin: 32px 30px;
+}
+#landing-header #sign-up {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 32px 30px;
 }
 #landing-header h1 {
   font-weight: bold;
@@ -205,7 +207,13 @@ header nav .about {
 #landing-header button:hover {
   background-color: #6b6b6b;
 }
+#landing-header img {
+  display: none;
+}
 /*========== TOP CONTENT ==========*/
+#top-content img {
+  display: none;
+}
 #top-content div {
   margin-top: 42px;
 }
@@ -237,7 +245,12 @@ header nav .about {
   line-height: 1.3;
 }
 /*========== SUBSCRIPTION PLANS ==========*/
-.subscription-block {
+#subscriptions .sub-heading {
+  margin-top: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+#subscriptions .subscription-block {
   background-color: #9b9b9b;
   color: #000000;
   text-align: center;
@@ -245,24 +258,21 @@ header nav .about {
   font-family: "Nunito", sans-serif;
   padding: 18px 40px 33px 40px;
 }
-.subscription-block:first-child {
-  margin-top: 65px;
-}
-.subscription-block sup {
+#subscriptions .subscription-block sup {
   vertical-align: top;
 }
-.subscription-block .sub-amount {
+#subscriptions .subscription-block .sub-amount {
   font-size: 4.2rem;
   margin-left: 5px;
 }
-.subscription-block ul {
+#subscriptions .subscription-block ul {
   margin-top: 25px;
 }
-.subscription-block ul li {
+#subscriptions .subscription-block ul li {
   margin-bottom: 8px;
   font-weight: bold;
 }
-.subscription-block button {
+#subscriptions .subscription-block button {
   border: none;
   border-radius: 5px;
   background-color: #4a4a4a;
@@ -274,6 +284,31 @@ header nav .about {
   font-size: 1.8rem;
   font-weight: bold;
 }
-.subscription-block button:hover {
+#subscriptions .subscription-block button:hover {
+  background-color: #6b6b6b;
+}
+/*========== BOTTOM CONTENT ==========*/
+#bottom-content {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+#bottom-content h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+#bottom-content button {
+  border: none;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  margin-top: 18px;
+  padding: 5px 20px;
+}
+#bottom-content button:hover {
   background-color: #6b6b6b;
 }
