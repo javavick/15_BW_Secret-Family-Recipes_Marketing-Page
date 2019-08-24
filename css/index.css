@@ -220,6 +220,7 @@ header nav .about {
 @media (min-width: 1000px) {
   #landing-header #sign-up {
     padding-bottom: 20%;
+    width: 32vw;
   }
 }
 #landing-header h1 {
@@ -248,9 +249,19 @@ header nav .about {
 #landing-header button:hover {
   background-color: #6b6b6b;
 }
+#landing-header button .desktop {
+  display: none;
+}
+@media (min-width: 1000px) {
+  #landing-header button .desktop {
+    display: inline;
+  }
+}
 @media (min-width: 1000px) {
   #landing-header button {
     margin-left: 60%;
+    padding: 2% 6%;
+    font-size: 1.3rem;
   }
 }
 #landing-header p {
@@ -262,6 +273,7 @@ header nav .about {
     text-align: center;
     font-size: 2rem;
     text-align: left;
+    margin-top: 2%;
   }
 }
 #landing-header img {
@@ -270,16 +282,35 @@ header nav .about {
 @media (min-width: 1000px) {
   #landing-header img {
     display: block;
+    width: 30vw;
   }
 }
 /*========== TOP CONTENT ==========*/
+@media (min-width: 1000px) {
+  #top-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 #top-content img {
   display: none;
 }
-#top-content div {
+@media (min-width: 1000px) {
+  #top-content img {
+    display: block;
+    width: 43vw;
+  }
+}
+@media (min-width: 1000px) {
+  #top-content .features-div {
+    width: 35vw;
+  }
+}
+#top-content .features-div div {
   margin-top: 42px;
 }
-#top-content p {
+#top-content .features-div div p {
   margin-top: 15px;
   line-height: 1.2;
 }
