@@ -228,12 +228,12 @@ header nav .about {
   background-color: #4a4a4a;
   color: #ffffff;
   text-align: center;
-  margin: 35px 12% 0 12%;
+  margin: 45px 12% 0 12%;
   font-family: "Nunito", sans-serif;
   padding: 5% 40px 8% 40px;
 }
 .testimonial-block:first-child {
-  margin-top: 65px;
+  margin-top: 85px;
 }
 .testimonial-block img {
   width: 50px;
@@ -248,7 +248,7 @@ header nav .about {
 }
 /*========== SUBSCRIPTION PLANS ==========*/
 #subscriptions .sub-heading {
-  margin-top: 60px;
+  margin-top: 70px;
   text-align: center;
   font-weight: bold;
 }
@@ -256,7 +256,7 @@ header nav .about {
   background-color: #9b9b9b;
   color: #000000;
   text-align: center;
-  margin: 35px 12% 0 12%;
+  margin: 45px 12% 0 12%;
   font-family: "Nunito", sans-serif;
   padding: 7% 40px 10% 40px;
 }
