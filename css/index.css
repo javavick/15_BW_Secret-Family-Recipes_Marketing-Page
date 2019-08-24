@@ -209,8 +209,21 @@ header nav .about {
 #landing-header button:hover {
   background-color: #6b6b6b;
 }
+#landing-header p {
+  display: none;
+}
+@media (min-width: 1000px) {
+  #landing-header p {
+    display: block;
+  }
+}
 #landing-header img {
   display: none;
+}
+@media (min-width: 1000px) {
+  #landing-header img {
+    display: block;
+  }
 }
 /*========== TOP CONTENT ==========*/
 #top-content img {
