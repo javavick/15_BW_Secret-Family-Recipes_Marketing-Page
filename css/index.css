@@ -142,6 +142,11 @@ body {
   width: 93%;
   margin: 0 auto;
 }
+@media (min-width: 1000px) {
+  body {
+    padding-left: 12%;
+  }
+}
 h1 {
   font-size: 2.8rem;
 }
@@ -169,12 +174,23 @@ header nav {
   align-items: center;
   margin-top: 18px;
 }
+@media (min-width: 1000px) {
+  header nav {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #4a4a4a;
 }
 header nav img {
   width: 60px;
+}
+@media (min-width: 1000px) {
+  header nav img {
+    width: 100px;
+  }
 }
 header nav .pages {
   font-size: 1.8rem;
@@ -193,7 +209,7 @@ header nav .about {
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    margin: 3% 7%;
+    margin: 3% 7% 3% 0%;
   }
 }
 #landing-header #sign-up {
@@ -213,7 +229,7 @@ header nav .about {
 }
 @media (min-width: 1000px) {
   #landing-header h1 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     padding-bottom: 3%;
     width: 100%;
     text-align: left;
