@@ -18,25 +18,28 @@
     @media @desktop{
       width: 51vw;
     }
-  }
-
+  
   h1 {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
     @media @desktop{
-      font-size: 3.6rem;
+      font-size: 3rem;
       padding-bottom: 3%;
       text-align: left;
       
     }
   }
+}
 
   button {
     .buttonStyles(@button-bg, @button-color, @button-hover);
     margin: 33px auto 23px auto;
     padding: 2px 30px;
     font-size: 1.8rem;
+    @media @tablet{
+      .buttonStyles(@green, @button-color, @peach);
+    }
     .desktopButtonText{
       display: none;
       @media @desktop{
@@ -46,8 +49,7 @@
     @media @desktop{
       margin-left: 60%;
       padding: 2% 6%;
-      font-size: 2rem;
-      background: @green;
+      font-size: 1.6rem;
     }
   }
     
@@ -93,12 +95,12 @@
     display: none;
     @media @desktop{
       display: block;
-      width: 43vw;
+      width: 52vw;
     }
   }
   .features-div{
     @media @desktop{
-      width: 43vw;      
+      width: 35vw;      
     }
 
     div {
@@ -113,6 +115,9 @@
         margin-top: 15px;
         // margin-right: 10px;
         line-height: 1.2;
+        @media @desktop{
+          font: 1rem;
+        }
       }
       
     }

@@ -224,14 +224,14 @@ header nav .about {
     width: 51vw;
   }
 }
-#landing-header h1 {
+#landing-header #sign-up h1 {
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
 }
 @media (min-width: 1000px) {
-  #landing-header h1 {
-    font-size: 3.6rem;
+  #landing-header #sign-up h1 {
+    font-size: 3rem;
     padding-bottom: 3%;
     text-align: left;
   }
@@ -249,6 +249,18 @@ header nav .about {
 #landing-header button:hover {
   background-color: #6b6b6b;
 }
+@media (min-width: 800px) {
+  #landing-header button {
+    border: none;
+    border-radius: 5px;
+    background-color: #6AD856;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #landing-header button:hover {
+    background-color: #FE9A76;
+  }
+}
 #landing-header button .desktopButtonText {
   display: none;
 }
@@ -261,8 +273,7 @@ header nav .about {
   #landing-header button {
     margin-left: 60%;
     padding: 2% 6%;
-    font-size: 2rem;
-    background: #6AD856;
+    font-size: 1.6rem;
   }
 }
 #landing-header p {
@@ -310,12 +321,12 @@ header nav .about {
 @media (min-width: 1000px) {
   #top-content img {
     display: block;
-    width: 43vw;
+    width: 52vw;
   }
 }
 @media (min-width: 1000px) {
   #top-content .features-div {
-    width: 43vw;
+    width: 35vw;
   }
 }
 #top-content .features-div div {
@@ -329,6 +340,11 @@ header nav .about {
 #top-content .features-div div p {
   margin-top: 15px;
   line-height: 1.2;
+}
+@media (min-width: 1000px) {
+  #top-content .features-div div p {
+    font: 1rem;
+  }
 }
 /*========== TESTIMONIALS ==========*/
 .testimonial-block {
