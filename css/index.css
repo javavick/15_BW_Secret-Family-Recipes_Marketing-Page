@@ -438,6 +438,21 @@ header nav .about {
 #bottom-content button:hover {
   background-color: #6b6b6b;
 }
+main .about {
+  margin-bottom: 25vh;
+}
+main .about h1 {
+  margin: 12% 0 0 0;
+  text-align: center;
+  font-size: 2.6rem;
+}
+main .about p {
+  font-size: 1.6rem;
+  margin-top: 6%;
+}
+main .about p strong {
+  font-weight: 600;
+}
 footer {
   margin-top: 100px;
   margin-bottom: 15px;
