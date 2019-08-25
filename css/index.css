@@ -178,6 +178,7 @@ header nav {
   header nav {
     width: 100%;
     margin: 0 auto;
+    padding-right: 8%;
   }
 }
 header nav a {
@@ -190,6 +191,7 @@ header nav img {
 @media (min-width: 1000px) {
   header nav img {
     width: 100px;
+    margin-top: 5%;
   }
 }
 header nav .pages {
@@ -262,6 +264,7 @@ header nav .about {
     margin-left: 60%;
     padding: 2% 6%;
     font-size: 1.3rem;
+    background: #6AD856;
   }
 }
 #landing-header p {
