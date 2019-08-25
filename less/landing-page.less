@@ -2,13 +2,13 @@
 
 #landing-header {
   margin: 32px 30px;
-  @media @desktop{
+  @media @tablet{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    margin: 3% 7% 3% 0%;
+    margin: 3vh 7vw 3vh 0;
   }
 
   #sign-up {
@@ -17,7 +17,7 @@
     align-items: center;
     @media @desktop{
       padding-bottom: 20%;
-      width: 32vw;
+      width: 42vw;
     }
   }
 
@@ -28,7 +28,6 @@
     @media @desktop{
       font-size: 2.5rem;
       padding-bottom: 3%;
-      width: 100%;
       text-align: left;
     }
   }
@@ -38,7 +37,7 @@
     margin: 33px auto 23px auto;
     padding: 2px 30px;
     font-size: 1.8rem;
-    .desktop{
+    .desktopButtonText{
       display: none;
       @media @desktop{
         display: inline;
@@ -55,18 +54,20 @@
 
   p{
     display: none;
-    @media @desktop{
+    @media @tablet{
       display: block;
       text-align: center;
       font-size: 2rem;
-      text-align: left;
       margin-top: 2%;
+    }
+    @media @desktop{
+      text-align: left;
     }
   }
 
   img {
     display: none;
-    @media @desktop{
+    @media @tablet{
       display: block;
       width: 30vw;
     }
