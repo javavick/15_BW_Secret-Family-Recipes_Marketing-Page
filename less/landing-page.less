@@ -16,7 +16,6 @@
     flex-direction: column;
     align-items: center;
     @media @desktop{
-      padding-bottom: 20%;
       width: 51vw;
     }
   }
@@ -26,10 +25,10 @@
     line-height: 1.2;
     text-align: center;
     @media @desktop{
-      font-size: 2.5rem;
+      font-size: 3.6rem;
       padding-bottom: 3%;
       text-align: left;
-      padding-right: 30%;
+      
     }
   }
 
@@ -47,7 +46,7 @@
     @media @desktop{
       margin-left: 60%;
       padding: 2% 6%;
-      font-size: 1.3rem;
+      font-size: 2rem;
       background: @green;
     }
   }
@@ -55,14 +54,20 @@
 
   p{
     display: none;
+    em{
+      @media @desktop{
+        font-style: italic;
+      }
+    }
     @media @tablet{
       display: block;
       text-align: center;
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-top: 2%;
     }
     @media @desktop{
       text-align: left;
+      margin-left: 2%;
     }
   }
 
@@ -93,12 +98,17 @@
   }
   .features-div{
     @media @desktop{
-      width: 35vw;
-      
+      width: 43vw;      
     }
+
     div {
       margin-top: 42px;
 
+      h2{
+        @media @desktop{
+          font-weight: 400;
+        }
+      }
       p {
         margin-top: 15px;
         // margin-right: 10px;
