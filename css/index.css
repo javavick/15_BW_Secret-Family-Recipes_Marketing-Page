@@ -138,6 +138,11 @@ html {
   font-family: "Lato", sans-serif;
   color: #4a4a4a;
 }
+@media (min-width: 800px) {
+  html {
+    color: #000000;
+  }
+}
 body {
   width: 93%;
   margin: 0 auto;
