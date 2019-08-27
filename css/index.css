@@ -143,10 +143,6 @@ html {
     color: #000000;
   }
 }
-html,
-body {
-  width: 100%;
-}
 h1 {
   font-size: 2.8rem;
 }
@@ -388,11 +384,12 @@ header nav .pages {
 /*========== SUBSCRIPTION PLANS ==========*/
 #subscriptions {
   background: #FE9A76;
-  margin: 0%;
   width: 100%;
   height: 100%;
 }
 #subscriptions .sub-heading {
+  padding-top: 5%;
+  width: 100%;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -403,7 +400,11 @@ header nav .pages {
   text-align: center;
   margin: 45px 12% 0 12%;
   font-family: "Nunito", sans-serif;
-  padding: 7% 40px 10% 40px;
+  width: 80%;
+  height: 50%;
+  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 #subscriptions .subscription-block sup {
   vertical-align: top;
@@ -459,9 +460,6 @@ header nav .pages {
 }
 #bottom-content button:hover {
   background-color: #FE9A76;
-}
-main {
-  margin: 1vh 5vw 1vh 5vw;
 }
 main .about {
   margin-bottom: 15vh;
