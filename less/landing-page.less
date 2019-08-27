@@ -2,49 +2,129 @@
 
 #landing-header {
   margin: 32px 30px;
+  @media @tablet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 3vh 7vw 3vh 0;
+  }
 
   #sign-up {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
+    @media @desktop{
+      width: 51vw;
+    }
+  
   h1 {
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.0;
     text-align: center;
+    width: 85%;
+    @media @desktop{
+      line-height: 1.2;
+      font-size: 3rem;
+      padding-bottom: 3%;
+      text-align: left;
+      
+    }
   }
+}
 
   button {
     .buttonStyles(@button-bg, @button-color, @button-hover);
-
     margin: 33px auto 23px auto;
     padding: 2px 30px;
     font-size: 1.8rem;
+    @media @tablet{
+      .buttonStyles(@green, @button-color, @peach);
+    }
+    .desktopButtonText{
+      display: none;
+      @media @desktop{
+        display: inline;
+      }
+    }
+    @media @desktop{
+      margin-left: 60%;
+      padding: 2% 6%;
+      font-size: 1.6rem;
+    }
+  }
+    
+
+  p{
+    display: none;
+    em{
+      @media @desktop{
+        font-style: italic;
+      }
+    }
+    @media @tablet{
+      display: block;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 2%;
+    }
+    @media @desktop{
+      text-align: left;
+      margin-left: 2%;
+    }
   }
 
   img {
     display: none;
+    @media @tablet{
+      display: block;
+      width: 30vw;
+    }
   }
 }
 
 /*========== TOP CONTENT ==========*/
 
 #top-content {
+  @media @desktop{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
   img {
-    display: none;
+    display: block;
+    width: 85vw;
+    @media @desktop{
+      width: 52vw;
+    }
   }
+  .features-div{
+    @media @desktop{
+      width: 35vw;      
+    }
 
-  div {
-    margin-top: 42px;
-  }
+    div {
+      margin-top: 42px;
 
-  p {
-    margin-top: 15px;
-    // margin-right: 10px;
-    line-height: 1.2;
+      h2{
+        @media @desktop{
+          font-weight: 400;
+        }
+      }
+      p {
+        margin-top: 15px;
+        // margin-right: 10px;
+        line-height: 1.2;
+        @media @desktop{
+          font: 1rem;
+        }
+      }
+      
+    }
   }
-}
+} 
 
 /*========== TESTIMONIALS ==========*/
 
@@ -75,10 +155,14 @@
 /*========== SUBSCRIPTION PLANS ==========*/
 
 #subscriptions {
+
+  background: @peach;
+  padding: 5vh 0 5wh 0;
   .sub-heading {
     margin-top: 70px;
     text-align: center;
     font-weight: bold;
+    color: white;
   }
 
   .subscription-block {
