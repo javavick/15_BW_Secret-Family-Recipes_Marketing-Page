@@ -21,9 +21,11 @@
   
   h1 {
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1.0;
     text-align: center;
+    width: 85%;
     @media @desktop{
+      line-height: 1.2;
       font-size: 3rem;
       padding-bottom: 3%;
       text-align: left;
@@ -92,9 +94,9 @@
     }
 
   img {
-    display: none;
+    display: block;
+    width: 85vw;
     @media @desktop{
-      display: block;
       width: 52vw;
     }
   }
@@ -153,10 +155,13 @@
 /*========== SUBSCRIPTION PLANS ==========*/
 
 #subscriptions {
+
+  background: @peach;
   .sub-heading {
     margin-top: 70px;
     text-align: center;
     font-weight: bold;
+    color: white;
   }
 
   .subscription-block {
