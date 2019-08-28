@@ -128,9 +128,39 @@
 
 /*========== TESTIMONIALS ==========*/
 
+//CAROUSEL- FOR MOBILE
+.carouselCards{
+  #carouselTestimonies{
+    @media @desktop{
+      display: none;
+    }
+    .carousel-indicators{
+      li{
+        /*====OVERWRITE STANDARD INDICATOR STYLE====*/
+        //MAKE INTO CIRCLE INDICATOR
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        //ADD BORDER AROUND INDICATOR
+        border: 1px solid gray;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.desktopTestimonials{
+  display: none;
+  @media @desktop{
+    display: block;
+  }
+}
+
+
 .testimonial-block {
   .blockStyles(@testimonial-bg, @testimonial-color, @alt-font);
 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  background: @white;
   padding: 5% 40px 8% 40px;
 
   &:first-child {

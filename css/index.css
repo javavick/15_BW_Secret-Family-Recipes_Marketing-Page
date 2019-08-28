@@ -349,12 +349,35 @@ header nav .about {
   }
 }
 /*========== TESTIMONIALS ==========*/
+@media (min-width: 1000px) {
+  .carouselCards #carouselTestimonies {
+    display: none;
+  }
+}
+.carouselCards #carouselTestimonies .carousel-indicators li {
+  /*====OVERWRITE STANDARD INDICATOR STYLE====*/
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+}
+.desktopTestimonials {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .desktopTestimonials {
+    display: block;
+  }
+}
 .testimonial-block {
   background-color: #ffffff;
   color: #000000;
   text-align: center;
   margin: 45px 12% 0 12%;
   font-family: "Nunito", sans-serif;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  background: #ffffff;
   padding: 5% 40px 8% 40px;
 }
 .testimonial-block:first-child {
