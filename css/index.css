@@ -186,11 +186,15 @@ header nav img {
 }
 @media (min-width: 1000px) {
   header nav img {
+    width: 100px;
     margin-top: 5%;
   }
 }
 header nav .pages {
   font-size: 1.8rem;
+}
+header nav .about {
+  margin-right: 40px;
 }
 /*========== HEADER ==========*/
 #landing-header {
@@ -334,6 +338,7 @@ header nav .pages {
 }
 #top-content .features-div div p {
   margin-top: 15px;
+  margin-right: 10px;
   line-height: 1.2;
 }
 @media (min-width: 1000px) {
@@ -386,6 +391,7 @@ header nav .pages {
   background: #FE9A76;
   width: 100%;
   height: 100%;
+  padding: 5vh 0 5wh 0;
 }
 #subscriptions .sub-heading {
   padding-top: 5%;
@@ -460,6 +466,12 @@ header nav .pages {
 }
 #bottom-content button:hover {
   background-color: #FE9A76;
+}
+.homepage {
+  margin: 0;
+}
+main {
+  margin: 1vh 5vw 1vh 5vw;
 }
 main .about {
   margin-bottom: 15vh;
