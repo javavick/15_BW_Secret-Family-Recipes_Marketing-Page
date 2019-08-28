@@ -1,7 +1,7 @@
 /*========== HEADER ==========*/
 
 #landing-header {
-  margin: 32px 30px;
+  margin: 3rem 3rem;
   @media @tablet{
     display: flex;
     flex-direction: row;
@@ -29,6 +29,7 @@
       font-size: 3rem;
       padding-bottom: 3%;
       text-align: left;
+      width: 90%;
 
     }
   }
@@ -95,8 +96,10 @@
   img {
     width: 85vw;
     padding: 4%;
+    margin-left: 3rem;
     @media @desktop{
       width: 52vw;
+      margin-left: 1rem;
 
     }
   }
@@ -106,7 +109,7 @@
     }
 
     div {
-      margin-top: 42px;
+      margin: 4rem 3rem 4rem 3rem;
 
       h2{
         @media @desktop{
@@ -127,6 +130,33 @@
 }
 
 /*========== TESTIMONIALS ==========*/
+
+//CAROUSEL- FOR MOBILE
+.carouselCards{
+  #carouselTestimonies{
+    @media @desktop{
+      display: none;
+    }
+    .carousel-indicators{
+      li{
+        /*====OVERWRITE STANDARD INDICATOR STYLE====*/
+        //MAKE INTO CIRCLE INDICATOR
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        //ADD BORDER AROUND INDICATOR
+        border: 1px solid gray;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.desktopTestimonials{
+  display: none;
+  @media @desktop{
+    display: block;
+  }
+}
 
 // .testimonial-block {
 //   .blockStyles(@testimonial-bg, @testimonial-color, @alt-font);
@@ -153,19 +183,32 @@
 // }
 
 /*========== Testaments ==========*/
-.testamentSection {
+.desktopTestimonials {
   .displayFlex(space-between, center);
-  flex-flow: column wrap;
-  margin: 10rem 0 10rem 0;
+  display:none;
+  
+  
   @media @tablet{
     flex-flow: row nowrap;
   }
+  @media @desktop{
+    .displayFlex(space-evenly, center);
+    
+    // flex-flow: column wrap;
+    margin: 10rem 0 10rem 0;
+  }
+  
 }
-#testament {
+
+
+
+
+.testimonial-block {
   background: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   margin: 10%;
+  padding: 3%;
   @media @tablet {
   width: 28%;
   height: 30rem;
@@ -179,10 +222,10 @@
   }
   h2 {
     font-weight: bold;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   p {
-    margin: 3rem;
+    margin: 0 3rem 3rem 3rem;
     text-align: left;
   }
 }
@@ -195,13 +238,23 @@
   background: @peach;
   width: 100%;
   height: 100%;
-  padding: 5vh 0 5wh 0;
+  padding: 5vh 0 5vh 0;
+  margin-top: 20vh;
+  @media @tablet{
+    .displayFlex(space-evenly, center)
+  }
+  @media @desktop{
+    margin-top: 0;
+  }
   .sub-heading {
     padding-top: 5%;
     width: 100%;
     text-align: center;
     font-weight: bold;
     color: white;
+    @media @tablet{
+      padding: 35vh 0 0 7vw;
+    }
   }
 
   .subscription-block {
@@ -211,6 +264,13 @@
     padding: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
+    @media @tablet{
+      width: 25rem;
+
+    }
+    @media @tablet{
+      width: 25rem;
+    }
 
     sup {
       vertical-align: top;
@@ -236,7 +296,7 @@
       margin-top: 20px;
       padding: 5px 35px;
       font-family: @alt-font, sans-serif;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       font-weight: bold;
     }
   }
@@ -249,7 +309,7 @@
   font-family: @alt-font, sans-serif;
 
   h2 {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
     font-weight: bold;
     line-height: 1.3;
   }
