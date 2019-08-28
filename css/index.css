@@ -163,6 +163,9 @@ sub {
   font-size: medium;
   vertical-align: sub;
 }
+em {
+  font-style: italic;
+}
 header nav {
   display: flex;
   flex-direction: row;
@@ -350,7 +353,7 @@ header nav .about {
   }
 }
 /*========== TESTIMONIALS ==========*/
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .carouselCards #carouselTestimonies {
     display: none;
   }
@@ -363,14 +366,6 @@ header nav .about {
   border: 1px solid gray;
   margin-bottom: 15px;
 }
-.desktopTestimonials {
-  display: none;
-}
-@media (min-width: 1000px) {
-  .desktopTestimonials {
-    display: block;
-  }
-}
 .testimonial-block {
   background-color: #ffffff;
   color: #000000;
@@ -381,25 +376,22 @@ header nav .about {
   background: #ffffff;
   padding: 5% 40px 8% 40px;
 }
-.testimonial-block:first-child {
-  margin-top: 85px;
-}
 /*========== Testaments ==========*/
 .desktopTestimonials {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
   display: none;
 }
 @media (min-width: 800px) {
   .desktopTestimonials {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     flex-flow: row nowrap;
   }
 }
 @media (min-width: 1000px) {
   .desktopTestimonials {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
     margin: 10rem 0 10rem 0;
   }
@@ -413,9 +405,9 @@ header nav .about {
 }
 @media (min-width: 800px) {
   .testimonial-block {
-    width: 28%;
-    height: 30rem;
-    margin: 1%;
+    width: 35%;
+    height: 45%;
+    margin: 2.5%;
   }
 }
 .testimonial-block .testamentPic {
@@ -436,7 +428,7 @@ header nav .about {
   background: #FE9A76;
   width: 100%;
   height: 100%;
-  padding: 5vh 0 5vh 0;
+  padding: 5vh 10vw 5vh 10vw;
   margin-top: 20vh;
 }
 @media (min-width: 800px) {
@@ -444,6 +436,7 @@ header nav .about {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    padding: 2vh 4vw 2vh 4vh;
   }
 }
 @media (min-width: 1000px) {
@@ -460,7 +453,14 @@ header nav .about {
 }
 @media (min-width: 800px) {
   #subscriptions .sub-heading {
-    padding: 35vh 0 0 7vw;
+    padding-top: 25vh;
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  #subscriptions .sub-heading {
+    margin: auto;
+    padding-boddom: 25vh;
   }
 }
 #subscriptions .subscription-block {
@@ -477,12 +477,13 @@ header nav .about {
 }
 @media (min-width: 800px) {
   #subscriptions .subscription-block {
-    width: 25rem;
+    width: 150%;
+    margin: 2.5%;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   #subscriptions .subscription-block {
-    width: 25rem;
+    width: 165%;
   }
 }
 #subscriptions .subscription-block sup {
