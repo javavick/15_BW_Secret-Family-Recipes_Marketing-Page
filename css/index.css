@@ -171,7 +171,7 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 2rem 2rem 2rem;
+  margin: 1rem 2rem 2rem 3rem;
 }
 @media (min-width: 1000px) {
   header nav {
@@ -189,7 +189,7 @@ header nav img {
 }
 @media (min-width: 1000px) {
   header nav img {
-    width: 120px;
+    width: 125px;
     margin-top: 5%;
   }
 }
@@ -197,7 +197,7 @@ header nav .pages {
   font-size: 1.8rem;
 }
 header nav .about {
-  margin-right: 40px;
+  margin-right: 7%;
 }
 /*========== HEADER ==========*/
 #landing-header {
@@ -543,60 +543,64 @@ header nav .about {
   background-color: #FE9A76;
 }
 .homepage {
-  margin: 0;
-}
-main {
   margin: 1vh 5vw 1vh 5vw;
 }
-main .about {
+aboutMain .about {
   margin-bottom: 15vh;
 }
-main .about h1 {
+aboutMain .about h1 {
   margin: 12% 0 0 0;
   text-align: center;
   font-size: 2.6rem;
 }
-main .about p {
+aboutMain .about p {
   font-size: 1.6rem;
   margin-top: 6%;
 }
-main .about p strong {
+aboutMain .about p strong {
   font-weight: 600;
 }
-main .meetUs h2 {
+aboutMain .meetUs h2 {
   text-align: left;
   font-weight: 900;
   font-size: 2.6rem;
 }
-main .meetUs .teams h3 {
+aboutMain .meetUs h3 {
   font-weight: 200;
   text-align: left;
   font-size: 2rem;
   margin: 4vh 0 3vh 0;
 }
-main .meetUs .teams .teamMember {
+@media (min-width: 800px) {
+  aboutMain .meetUs .teams {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+}
+aboutMain .meetUs .teams .teamMember {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 6%;
   padding: 8%;
 }
-main .meetUs .teams .teamMember img {
+aboutMain .meetUs .teams .teamMember img {
   border-radius: 100%;
   margin-left: 35%;
   margin-right: 40%;
 }
-main .meetUs .teams .teamMember h3 {
+aboutMain .meetUs .teams .teamMember h3 {
   font-weight: bold;
   text-align: center;
 }
-main .meetUs .teams .teamMember ul {
+aboutMain .meetUs .teams .teamMember ul {
   margin-bottom: 30px;
   text-align: center;
 }
-main .meetUs .teams .teamMember ul li {
+aboutMain .meetUs .teams .teamMember ul li {
   font-size: 1.5rem;
   line-height: 1.3;
 }
-main .meetUs .teams .teamMember ul li a {
+aboutMain .meetUs .teams .teamMember ul li a {
   text-decoration: none;
 }
 .contactUs h2 {
