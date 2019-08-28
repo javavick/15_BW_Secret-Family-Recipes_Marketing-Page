@@ -17,3 +17,9 @@
   margin: 45px 12% 0 12%;
   font-family: @font, sans-serif;
 }
+
+.displayFlex(@justify, @align) {
+  display: flex;
+  justify-content: @justify; //flex-start; /* flex-end, center, space-between, space-around, space-evenly */
+  align-content: @align; //stretch; /* flex-start,  flex-end, center, space-between, space-around */
+}

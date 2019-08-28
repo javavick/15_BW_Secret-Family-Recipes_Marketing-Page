@@ -18,7 +18,7 @@
     @media @desktop{
       width: 51vw;
     }
-  
+
   h1 {
     font-weight: bold;
     line-height: 1.0;
@@ -29,7 +29,7 @@
       font-size: 3rem;
       padding-bottom: 3%;
       text-align: left;
-      
+
     }
   }
 }
@@ -54,7 +54,7 @@
       font-size: 1.6rem;
     }
   }
-    
+
 
   p{
     display: none;
@@ -88,21 +88,21 @@
 
 #top-content {
   @media @desktop{
-    display: flex;
-    justify-content: space-between;
+    .displayFlex(space-between, center);
     width: 100%;
     }
 
   img {
-    display: block;
     width: 85vw;
+    padding: 4%;
     @media @desktop{
       width: 52vw;
+
     }
   }
   .features-div{
     @media @desktop{
-      width: 35vw;      
+      width: 35vw;
     }
 
     div {
@@ -115,51 +115,90 @@
       }
       p {
         margin-top: 15px;
-        // margin-right: 10px;
+        margin-right: 10px;
         line-height: 1.2;
         @media @desktop{
           font: 1rem;
         }
       }
-      
+
     }
   }
-} 
+}
 
 /*========== TESTIMONIALS ==========*/
 
-.testimonial-block {
-  .blockStyles(@testimonial-bg, @testimonial-color, @alt-font);
+// .testimonial-block {
+//   .blockStyles(@testimonial-bg, @testimonial-color, @alt-font);
+//
+//   padding: 5% 40px 8% 40px;
+//
+//   &:first-child {
+//     margin-top: 85px;
+//   }
+//
+//   img {
+//     width: 50px;
+//   }
+//
+//   h2 {
+//     margin-top: 15px;
+//     font-weight: bold;
+//   }
+//
+//   p {
+//     margin-top: 15px;
+//     line-height: 1.3;
+//   }
+// }
 
-  padding: 5% 40px 8% 40px;
-
-  &:first-child {
-    margin-top: 85px;
-  }
-
-  img {
-    width: 50px;
-  }
-
-  h2 {
-    margin-top: 15px;
-    font-weight: bold;
-  }
-
-  p {
-    margin-top: 15px;
-    line-height: 1.3;
+/*========== Testaments ==========*/
+.testamentSection {
+  .displayFlex(space-between, center);
+  flex-flow: column wrap;
+  margin: 10rem 0 10rem 0;
+  @media @tablet{
+    flex-flow: row nowrap;
   }
 }
+#testament {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 10%;
+  @media @tablet {
+  width: 28%;
+  height: 30rem;
+  margin: 1%;
+}
+
+  .testamentPic {
+    position: relative;
+    bottom: 4rem;
+    width: 10rem;
+  }
+  h2 {
+    font-weight: bold;
+    margin-bottom: 5rem;
+  }
+  p {
+    margin: 3rem;
+    text-align: left;
+  }
+}
+
 
 /*========== SUBSCRIPTION PLANS ==========*/
 
 #subscriptions {
 
   background: @peach;
+  width: 100%;
+  height: 100%;
   padding: 5vh 0 5wh 0;
   .sub-heading {
-    margin-top: 70px;
+    padding-top: 5%;
+    width: 100%;
     text-align: center;
     font-weight: bold;
     color: white;
@@ -167,8 +206,11 @@
 
   .subscription-block {
     .blockStyles(@subscription-bg, @subscription-color, @alt-font);
-
-    padding: 7% 40px 10% 40px;
+    width: 80%;
+    height: 50%;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
     sup {
       vertical-align: top;
