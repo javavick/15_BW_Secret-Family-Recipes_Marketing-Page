@@ -12,27 +12,36 @@
   }
 
   #sign-up {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    text-align: center;
+    @media @tablet {
+      margin-left: 4.5rem;
+    }
     @media @desktop{
       width: 51vw;
+
     }
 
   h1 {
     font-weight: bold;
     line-height: 1.0;
     text-align: center;
-    width: 85%;
+    // width: 85%;
+    @media @tablet {
+      text-align: left;
+    }
     @media @desktop{
       line-height: 1.2;
       font-size: 3rem;
       padding-bottom: 3%;
-      text-align: left;
+      margin-left: 0;
       width: 90%;
 
     }
   }
+
 }
 
   button {
@@ -66,13 +75,12 @@
     }
     @media @tablet{
       display: block;
-      text-align: center;
+      text-align: left;
       font-size: 2.5rem;
       margin-top: 2%;
     }
     @media @desktop{
       text-align: left;
-      margin-left: 2%;
     }
   }
 
@@ -99,7 +107,7 @@
     margin-left: 3rem;
     @media @desktop{
       width: 52vw;
-      margin-left: 1rem;
+       margin-left: 1rem;
 
     }
   }
@@ -230,7 +238,7 @@
       margin: auto;
       width: 50%;
     }
-    
+
   }
 
   .subscription-block {
