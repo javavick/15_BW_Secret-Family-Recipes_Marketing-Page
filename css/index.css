@@ -171,12 +171,11 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 2rem 2rem 3rem;
+  margin: 1.8rem 3rem 0 3rem;
 }
 @media (min-width: 1000px) {
   header nav {
     width: 100%;
-    margin: 0 auto;
     padding-right: 8%;
   }
 }
@@ -185,20 +184,19 @@ header nav a {
   color: #4a4a4a;
 }
 header nav img {
-  width: 60px;
+  width: 100px;
 }
 @media (min-width: 1000px) {
   header nav img {
-    width: 125px;
+    width: 100px;
     margin-top: 5%;
   }
 }
 header nav .pages {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
-header nav .aboutLink {
-  margin-right: 4%;
-  font-size: 1.5rem;
+header nav .about-link {
+  margin-right: 40px;
 }
 /*========== HEADER ==========*/
 #landing-header {
@@ -446,22 +444,16 @@ header nav .aboutLink {
   }
 }
 #subscriptions .sub-heading {
-  padding-top: 5%;
   width: 100%;
   text-align: center;
   font-weight: bold;
   color: white;
+  align-items: center;
 }
 @media (min-width: 800px) {
   #subscriptions .sub-heading {
-    padding-top: 25vh;
-    width: 50%;
-  }
-}
-@media (min-width: 1000px) {
-  #subscriptions .sub-heading {
     margin: auto;
-    padding-boddom: 25vh;
+    width: 50%;
   }
 }
 #subscriptions .subscription-block {

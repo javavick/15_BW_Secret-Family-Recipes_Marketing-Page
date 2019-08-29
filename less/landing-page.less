@@ -137,7 +137,7 @@
     @media @tablet{
       display: none;
     }
-    
+
     .carousel-indicators{
       li{
         /*====OVERWRITE STANDARD INDICATOR STYLE====*/
@@ -209,6 +209,7 @@
   height: 100%;
   padding: 5vh 10vw 5vh 10vw;
   margin-top: 20vh;
+
   @media @tablet{
     .displayFlex(space-evenly, center);
     padding: 2vh 4vw 2vh 4vh;
@@ -218,19 +219,18 @@
   }
 
   .sub-heading {
-    padding-top: 5%;
+    // padding-top: 5%;
     width: 100%;
     text-align: center;
     font-weight: bold;
     color: white;
+    align-items: center;
     @media @tablet{
-      padding-top: 25vh;
+      // padding-top: 25vh;
+      margin: auto;
       width: 50%;
     }
-    @media @desktop{
-      margin: auto;
-      padding-boddom: 25vh;
-    }
+    
   }
 
   .subscription-block {
