@@ -163,12 +163,15 @@ sub {
   font-size: medium;
   vertical-align: sub;
 }
+em {
+  font-style: italic;
+}
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 18px;
+  margin: 1rem 2rem 2rem 3rem;
 }
 @media (min-width: 1000px) {
   header nav {
@@ -186,19 +189,20 @@ header nav img {
 }
 @media (min-width: 1000px) {
   header nav img {
-    width: 100px;
+    width: 125px;
     margin-top: 5%;
   }
 }
 header nav .pages {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
-header nav .about {
-  margin-right: 40px;
+header nav .aboutLink {
+  margin-right: 4%;
+  font-size: 1.5rem;
 }
 /*========== HEADER ==========*/
 #landing-header {
-  margin: 32px 30px;
+  margin: 3rem 3rem;
 }
 @media (min-width: 800px) {
   #landing-header {
@@ -232,6 +236,7 @@ header nav .about {
     font-size: 3rem;
     padding-bottom: 3%;
     text-align: left;
+    width: 90%;
   }
 }
 #landing-header button {
@@ -317,10 +322,12 @@ header nav .about {
 #top-content img {
   width: 85vw;
   padding: 4%;
+  margin-left: 3rem;
 }
 @media (min-width: 1000px) {
   #top-content img {
     width: 52vw;
+    margin-left: 1rem;
   }
 }
 @media (min-width: 1000px) {
@@ -329,7 +336,7 @@ header nav .about {
   }
 }
 #top-content .features-div div {
-  margin-top: 42px;
+  margin: 4rem 3rem 4rem 3rem;
 }
 @media (min-width: 1000px) {
   #top-content .features-div div h2 {
@@ -347,43 +354,74 @@ header nav .about {
   }
 }
 /*========== TESTIMONIALS ==========*/
+@media (min-width: 800px) {
+  .carouselCards #carouselTestimonies {
+    display: none;
+  }
+}
+.carouselCards #carouselTestimonies .carousel-indicators li {
+  /*====OVERWRITE STANDARD INDICATOR STYLE====*/
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+}
+.testimonial-block {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  margin: 45px 12% 0 12%;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+  padding: 5% 40px 8% 40px;
+}
 /*========== Testaments ==========*/
-.testamentSection {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  flex-flow: column wrap;
-  margin: 10rem 0 10rem 0;
+.desktopTestimonials {
+  display: none;
 }
 @media (min-width: 800px) {
-  .testamentSection {
+  .desktopTestimonials {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     flex-flow: row nowrap;
   }
 }
-#testament {
+@media (min-width: 1000px) {
+  .desktopTestimonials {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 10rem 0 10rem 0;
+  }
+}
+.testimonial-block {
   background: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   margin: 10%;
+  padding: 3%;
 }
 @media (min-width: 800px) {
-  #testament {
-    width: 28%;
-    height: 30rem;
-    margin: 1%;
+  .testimonial-block {
+    width: 35%;
+    height: 45%;
+    margin: 2.5%;
   }
 }
-#testament .testamentPic {
+.testimonial-block .testamentPic {
   position: relative;
   bottom: 4rem;
   width: 10rem;
 }
-#testament h2 {
+.testimonial-block h2 {
   font-weight: bold;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
-#testament p {
-  margin: 3rem;
+.testimonial-block p {
+  margin: 0 3rem 3rem 3rem;
   text-align: left;
 }
 /*========== SUBSCRIPTION PLANS ==========*/
@@ -391,7 +429,21 @@ header nav .about {
   background: #FE9A76;
   width: 100%;
   height: 100%;
-  padding: 5vh 0 5wh 0;
+  padding: 5vh 10vw 5vh 10vw;
+  margin-top: 20vh;
+}
+@media (min-width: 800px) {
+  #subscriptions {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 2vh 4vw 2vh 4vh;
+  }
+}
+@media (min-width: 1000px) {
+  #subscriptions {
+    margin-top: 0;
+  }
 }
 #subscriptions .sub-heading {
   padding-top: 5%;
@@ -399,6 +451,18 @@ header nav .about {
   text-align: center;
   font-weight: bold;
   color: white;
+}
+@media (min-width: 800px) {
+  #subscriptions .sub-heading {
+    padding-top: 25vh;
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  #subscriptions .sub-heading {
+    margin: auto;
+    padding-boddom: 25vh;
+  }
 }
 #subscriptions .subscription-block {
   background-color: #ffffff;
@@ -411,6 +475,17 @@ header nav .about {
   padding: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+@media (min-width: 800px) {
+  #subscriptions .subscription-block {
+    width: 150%;
+    margin: 2.5%;
+  }
+}
+@media (min-width: 1000px) {
+  #subscriptions .subscription-block {
+    width: 165%;
+  }
 }
 #subscriptions .subscription-block sup {
   vertical-align: top;
@@ -435,7 +510,7 @@ header nav .about {
   margin-top: 20px;
   padding: 5px 35px;
   font-family: "Nunito", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: bold;
 }
 #subscriptions .subscription-block button:hover {
@@ -446,9 +521,10 @@ header nav .about {
   margin-top: 80px;
   text-align: center;
   font-family: "Nunito", sans-serif;
+  padding: 0 8.5% 0 8.5%;
 }
 #bottom-content h2 {
-  font-size: 2.6rem;
+  font-size: 2.7rem;
   font-weight: bold;
   line-height: 1.3;
 }
@@ -473,36 +549,60 @@ header nav .about {
 main {
   margin: 1vh 5vw 1vh 5vw;
 }
-main .about {
+main .aboutFR {
   margin-bottom: 15vh;
 }
-main .about h1 {
+main .aboutFR h1 {
   margin: 12% 0 0 0;
   text-align: center;
   font-size: 2.6rem;
 }
-main .about p {
+main .aboutFR p {
   font-size: 1.6rem;
   margin-top: 6%;
 }
-main .about p strong {
+main .aboutFR p strong {
   font-weight: 600;
 }
+main .meetUs {
+  margin: 0 2%;
+  width: 90%;
+}
 main .meetUs h2 {
-  text-align: left;
   font-weight: 900;
   font-size: 2.6rem;
 }
-main .meetUs .teams h3 {
+main .meetUs h3 {
   font-weight: 200;
-  text-align: left;
   font-size: 2rem;
   margin: 4vh 0 3vh 0;
+}
+main .meetUs .teams {
+  width: 85%;
+}
+@media (min-width: 800px) {
+  main .meetUs .teams {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1000px) {
+  main .meetUs .teams {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 main .meetUs .teams .teamMember {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 6%;
   padding: 8%;
+}
+@media (min-width: 800px) {
+  main .meetUs .teams .teamMember {
+    width: 33%;
+  }
 }
 main .meetUs .teams .teamMember img {
   border-radius: 100%;
@@ -521,6 +621,16 @@ main .meetUs .teams .teamMember ul li {
   font-size: 1.5rem;
   line-height: 1.3;
 }
+@media (min-width: 800px) {
+  main .meetUs .teams .teamMember ul li {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1000px) {
+  main .meetUs .teams .teamMember ul li {
+    font-size: 1.4rem;
+  }
+}
 main .meetUs .teams .teamMember ul li a {
   text-decoration: none;
 }
@@ -529,20 +639,42 @@ main .meetUs .teams .teamMember ul li a {
   text-align: center;
   margin-bottom: 2vh;
 }
+@media (min-width: 800px) {
+  .contactUs h2 {
+    text-align: left;
+  }
+}
+@media (min-width: 1000px) {
+  .contactUs h2 {
+    margin-left: 10%;
+  }
+}
 .contactUs button {
   border: none;
   border-radius: 5px;
   background-color: #6AD856;
   color: #ffffff;
   cursor: pointer;
-  margin: 0 auto;
-  padding: 5px 35px;
+  margin: 12% 20% 0 20%;
+  text-align: center;
+  padding: 2% 8%;
   font-family: "Nunito", sans-serif;
   font-size: 2rem;
   font-weight: bold;
 }
 .contactUs button:hover {
   background-color: #FE9A76;
+}
+@media (min-width: 800px) {
+  .contactUs button {
+    text-align: left;
+    margin: 3% 0 0 3%;
+  }
+}
+@media (min-width: 1000px) {
+  .contactUs button {
+    margin-left: 10%;
+  }
 }
 footer {
   margin-top: 100px;
