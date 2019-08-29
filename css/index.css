@@ -547,10 +547,11 @@ main .aboutFR {
 main .aboutFR h1 {
   margin: 12% 0 0 0;
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 3.5rem;
+  font-weight: 1000;
 }
 main .aboutFR p {
-  font-size: 1.6rem;
+  font-size: 2.3rem;
   margin-top: 6%;
 }
 main .aboutFR p strong {
@@ -566,7 +567,7 @@ main .meetUs h2 {
 }
 main .meetUs h3 {
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin: 4vh 0 3vh 0;
 }
 main .meetUs .teams {
@@ -588,13 +589,8 @@ main .meetUs .teams {
 }
 main .meetUs .teams .teamMember {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 6%;
+  margin: 2rem;
   padding: 8%;
-}
-@media (min-width: 800px) {
-  main .meetUs .teams .teamMember {
-    width: 33%;
-  }
 }
 main .meetUs .teams .teamMember img {
   border-radius: 100%;
@@ -604,6 +600,7 @@ main .meetUs .teams .teamMember img {
 main .meetUs .teams .teamMember h3 {
   font-weight: bold;
   text-align: center;
+  font-size: 2rem;
 }
 main .meetUs .teams .teamMember ul {
   margin-bottom: 30px;
