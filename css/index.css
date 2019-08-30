@@ -174,12 +174,7 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1.8rem 3rem 0 3rem;
-}
-@media (min-width: 1000px) {
-  header nav {
-    padding-right: 8%;
-  }
+  margin: 1.8rem 4rem 0 4rem;
 }
 header nav a {
   text-decoration: none;
@@ -190,7 +185,6 @@ header nav img {
 }
 @media (min-width: 1000px) {
   header nav img {
-    width: 100px;
     margin-top: 5%;
   }
 }
@@ -208,7 +202,7 @@ header nav .about-link {
   #landing-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
     margin: 3vh 7vw 3vh 0;
@@ -323,6 +317,7 @@ header nav .about-link {
     justify-content: space-between;
     align-content: center;
     width: 100%;
+    margin-top: 100px;
   }
 }
 #top-content img {
@@ -339,6 +334,8 @@ header nav .about-link {
 @media (min-width: 1000px) {
   #top-content .features-div {
     width: 35vw;
+    margin-right: 100px;
+    margin-top: 30px;
   }
 }
 #top-content .features-div div {
@@ -558,14 +555,26 @@ main .aboutFR h1 {
 main .aboutFR p {
   font-size: 2.3rem;
   margin-top: 6%;
-  margin-left: 2%;
+  margin-left: 4%;
+}
+@media (min-width: 800px) {
+  main .aboutFR p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 main .aboutFR p strong {
   font-weight: 600;
 }
 main .meetUs {
-  margin: 0 2%;
+  margin-left: 5%;
   width: 90%;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  main .meetUs {
+    text-align: left;
+  }
 }
 main .meetUs h2 {
   font-weight: 900;
@@ -583,7 +592,7 @@ main .meetUs .teams {
 @media (min-width: 800px) {
   main .meetUs .teams {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-content: center;
     flex-wrap: wrap;
     margin: 0;
@@ -598,7 +607,12 @@ main .meetUs .teams {
 main .meetUs .teams .teamMember {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 4rem 2rem 4rem 2rem;
-  padding: 4rem 6rem;
+  padding: 4rem;
+}
+@media (min-width: 800px) {
+  main .meetUs .teams .teamMember {
+    padding: 4rem 6rem;
+  }
 }
 main .meetUs .teams .teamMember img {
   border-radius: 100%;
