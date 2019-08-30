@@ -3,8 +3,6 @@
 }
 
 main {
-  // margin: 1vh 5vw 1vh 5vw;
-
   .aboutFR {
     margin-bottom: 15vh;
 
@@ -18,6 +16,7 @@ main {
       font-size: 2.3rem;
       margin-top: 6%;
       margin-left: 2%;
+
       strong {
         font-weight: 600;
       }
@@ -40,23 +39,30 @@ main {
 
     .teams {
       width: 85%;
+      margin: 0 auto;
+
       @media @tablet {
         .displayFlex(space-around, center);
         flex-wrap: wrap;
+        margin: 0;
       }
+
       @media @desktop {
         justify-content: space-between;
         flex-wrap: nowrap;
       }
       .teamMember {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-        margin: 2rem;
-        padding: 8%;
+        margin: 4rem 2rem 4rem 2rem;
+        padding: 4rem 6rem;
+
+        @media @tablet {
+        }
 
         img {
           border-radius: 100%;
-          margin-left: 35%;
-          margin-right: 40%;
+          display: block;
+          margin: 0 auto;
         }
 
         h3 {
@@ -72,9 +78,11 @@ main {
           li {
             font-size: 1.5rem;
             line-height: 1.3;
+
             @media @tablet {
               font-size: 1.2rem;
             }
+
             @media @desktop {
               font-size: 1.4rem;
             }
@@ -90,28 +98,31 @@ main {
 
 .contactUs {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 8rem;
+
   h2 {
     font-weight: 700;
     text-align: center;
-    @media @desktop {
-      margin-left: 10%;
-    }
   }
+
   button {
     .buttonStyles(@button-bg, @button-color, @button-hover);
-    margin: 12% 20% 0 20%;
+    margin: 5% 0 1% 0;
     text-align: center;
     padding: 2% 8%;
     font-family: @alt-font, sans-serif;
     font-size: 2rem;
     font-weight: bold;
+
     @media @tablet {
       text-align: left;
-      margin: 3% 0 0 3%;
+      margin: 3% 0 3% 0;
+      padding: 1% 2%;
     }
+
     @media @desktop {
-      margin-left: 10%;
+      padding: 1% 4%;
+      margin-bottom: 2%;
     }
   }
 }

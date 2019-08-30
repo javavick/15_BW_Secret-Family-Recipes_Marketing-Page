@@ -2,7 +2,7 @@
 
 #landing-header {
   margin: 3rem 3rem;
-  @media @tablet{
+  @media @tablet {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,81 +12,73 @@
   }
 
   #sign-up {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     text-align: center;
     @media @tablet {
       margin-left: 4.5rem;
     }
-    @media @desktop{
+    @media @desktop {
       width: 51vw;
-
     }
 
-  h1 {
-    font-weight: bold;
-    line-height: 1.0;
-    text-align: center;
-    // width: 85%;
-    @media @tablet {
-      text-align: left;
-    }
-    @media @desktop{
-      line-height: 1.2;
-      font-size: 3rem;
-      padding-bottom: 3%;
-      margin-left: 0;
-      width: 90%;
-
+    h1 {
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      @media @tablet {
+        text-align: left;
+      }
+      @media @desktop {
+        line-height: 1.2;
+        font-size: 3rem;
+        padding-bottom: 3%;
+        margin-left: 0;
+        width: 90%;
+      }
     }
   }
-
-}
 
   button {
     .buttonStyles(@button-bg, @button-color, @button-hover);
     margin: 33px auto 23px auto;
     padding: 2px 30px;
     font-size: 1.8rem;
-    @media @tablet{
+    @media @tablet {
       .buttonStyles(@green, @button-color, @peach);
     }
-    .desktopButtonText{
+    .desktopButtonText {
       display: none;
-      @media @desktop{
+      @media @desktop {
         display: inline;
       }
     }
-    @media @desktop{
+    @media @desktop {
       margin-left: 60%;
       padding: 2% 6%;
       font-size: 1.6rem;
     }
   }
 
-
-  p{
+  p {
     display: none;
-    em{
-      @media @desktop{
+    em {
+      @media @desktop {
         font-style: italic;
       }
     }
-    @media @tablet{
+    @media @tablet {
       display: block;
       text-align: left;
       font-size: 2.5rem;
       margin-top: 2%;
     }
-    @media @desktop{
+    @media @desktop {
       text-align: left;
     }
   }
 
   img {
     display: none;
-    @media @tablet{
+    @media @tablet {
       display: block;
       width: 30vw;
     }
@@ -96,31 +88,30 @@
 /*========== TOP CONTENT ==========*/
 
 #top-content {
-  @media @desktop{
+  @media @desktop {
     .displayFlex(space-between, center);
     width: 100%;
-    }
+  }
 
   img {
     width: 85vw;
     padding: 4%;
     margin-left: 3rem;
-    @media @desktop{
+    @media @desktop {
       width: 52vw;
-       margin-left: 1rem;
-
+      margin-left: 1rem;
     }
   }
-  .features-div{
-    @media @desktop{
+  .features-div {
+    @media @desktop {
       width: 35vw;
     }
 
     div {
       margin: 4rem 3rem 4rem 3rem;
 
-      h2{
-        @media @desktop{
+      h2 {
+        @media @desktop {
           font-weight: 400;
         }
       }
@@ -128,11 +119,10 @@
         margin-top: 15px;
         margin-right: 10px;
         line-height: 1.2;
-        @media @desktop{
+        @media @desktop {
           font: 1rem;
         }
       }
-
     }
   }
 }
@@ -140,14 +130,14 @@
 /*========== TESTIMONIALS ==========*/
 
 //CAROUSEL- FOR MOBILE
-.carouselCards{
-  #carouselTestimonies{
-    @media @tablet{
+.carouselCards {
+  #carouselTestimonies {
+    @media @tablet {
       display: none;
     }
 
-    .carousel-indicators{
-      li{
+    .carousel-indicators {
+      li {
         /*====OVERWRITE STANDARD INDICATOR STYLE====*/
         //MAKE INTO CIRCLE INDICATOR
         width: 10px;
@@ -170,27 +160,27 @@
 
 /*========== Testaments ==========*/
 .desktopTestimonials {
-  display:none;
- @media @tablet{
-   .displayFlex(space-between, center);
+  display: none;
+  @media @tablet {
+    .displayFlex(space-between, center);
     flex-flow: row nowrap;
   }
-  @media @desktop{
+  @media @desktop {
     .displayFlex(space-around, center);
     margin: 10rem 0 10rem 0;
   }
 }
 
 .testimonial-block {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   margin: 10%;
   padding: 3%;
   @media @tablet {
-  width: 35%;
-  height: 45%;
-  margin: 2.5%;
+    width: 35%;
+    height: 45%;
+    margin: 2.5%;
   }
 
   .testamentPic {
@@ -218,27 +208,24 @@
   padding: 5vh 10vw 5vh 10vw;
   margin-top: 20vh;
 
-  @media @tablet{
+  @media @tablet {
     .displayFlex(space-evenly, center);
     padding: 2vh 4vw 2vh 4vh;
   }
-  @media @desktop{
+  @media @desktop {
     margin-top: 0;
   }
 
   .sub-heading {
-    // padding-top: 5%;
     width: 100%;
     text-align: center;
     font-weight: bold;
     color: white;
     align-items: center;
-    @media @tablet{
-      // padding-top: 25vh;
+    @media @tablet {
       margin: auto;
       width: 50%;
     }
-
   }
 
   .subscription-block {
@@ -248,11 +235,11 @@
     padding: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
-    @media @tablet{
+    @media @tablet {
       width: 150%;
       margin: 2.5%;
     }
-    @media @desktop{
+    @media @desktop {
       width: 165%;
     }
 
